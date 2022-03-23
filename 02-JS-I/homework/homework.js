@@ -139,7 +139,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return (num **3);
+  return (num**3);
 }
 
 function elevar(num, exponent) {
@@ -239,7 +239,6 @@ function esVocal(letra){
   if (letra.length > 1) return "Dato incorrecto";
   if (letra === "a"||letra === "e"||letra === "i"||letra === "o"||letra === "u") return "Es vocal"
   else return "Dato incorrecto"
-
 }
 
 

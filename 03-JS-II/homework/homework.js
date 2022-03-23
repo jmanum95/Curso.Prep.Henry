@@ -30,10 +30,9 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status == 1) return "Online";
-
   if (status == 2) return "Away";
-    else{
-      return "Offline"
+  else{
+    return "Offline"
     }
 
 }
@@ -74,17 +73,17 @@ function colors(color) {
     case "blue":
       return "This is blue";
 
-      case "red":
+    case "red":
       return "This is red";
 
-      case "green":
+    case "green":
       return "This is green";
 
-      case "orange":
+    case "orange":
       return "This is orange";
 
-      default:
-        return "Color not found"
+    default:
+      return "Color not found"
   }
 }
 
@@ -96,11 +95,11 @@ function esDiezOCinco(numero) {
     case 5:
       return true;
 
-      case 10:
+    case 10:
       return true;
       
     default: 
-    return false
+      return false
   }
 }
 
@@ -109,7 +108,7 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero<50 && numero>20){
-        return true
+    return true
   }
   else return false
 }
@@ -137,7 +136,7 @@ function fizzBuzz(numero) {
   }
   if (numero % 3 === 0) return "fizz";
   if (numero % 5 === 0) return "buzz";
-else return numero
+  else return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -171,21 +170,18 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero <= 1) return false
-
   for (var i = 2; i < numero; i++) {
     if (numero % i === 0){
       return false;
     }
   }
   return true;
-
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
   if (valor==true){ 
     return "Soy verdadero"
   }else {
@@ -220,7 +216,6 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   var x = 0;
-
   do {
     x = x + 1
     numero = numero + 5
